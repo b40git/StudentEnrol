@@ -27,6 +27,26 @@ class BootStrap {
 	tuitionFees:9000.00,
 	studyMode:'Fulltime').save()
 
+	def student1=new Student(
+	name:'Joe James',
+	studentID:'JJ0001',
+	dob:new Date('03/01/1989'),
+	isFundingAvailable:true,
+	email:'jj89@gmail.com',
+	username:'joej89',
+	password:'ssaprwdo',
+	course:'computing').save()
+
+	def student2=new Student(
+	name:'Ryan Lee',
+	studentID:'JJ0049',
+	dob:new Date('21/05/1999'),
+	isFundingAvailable:true,
+	email:'rlee@gmail.com',
+	username:'ryanlee1',
+	password:'pasword2134',
+	course:'engineering').save()
+
 
 
 
