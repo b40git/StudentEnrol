@@ -55,6 +55,13 @@ class BootStrap {
 	course:'Engineering',
 	description:'''Professional studies lorem ipsum''').save()
 
+	def lecturermatt=new Lecturer(
+	fullName:'Matthew Smith',
+	post:'insert m post',
+	subject:'Mobile Applications',
+	lecturerEmail:'matthew123@gmail.com',
+	office:'5323',
+	bio:'''Insert the bio of matt ''').save()	
 
     }
     def destroy = {
