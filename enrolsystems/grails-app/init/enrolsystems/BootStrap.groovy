@@ -47,7 +47,13 @@ class BootStrap {
 	password:'pasword2134',
 	course:'engineering').save()
 
-
+	def module1=new Module(
+	title:'Professional Studies',
+	code:'PS410',
+	credits:40,
+	lecturer:'Brian',
+	course:'Engineering',
+	description:'''Professional studies lorem ipsum''').save()
 
 
     }
