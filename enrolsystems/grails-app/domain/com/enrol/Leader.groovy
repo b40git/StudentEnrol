@@ -19,6 +19,12 @@ String office
 
 String bio
 
+String toString(){
+
+return fullName
+
+}
+
     static constraints = {
 	fullName blank:false, nullable:false
 	department blank:false, nullable:false

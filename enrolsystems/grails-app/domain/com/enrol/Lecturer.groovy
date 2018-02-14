@@ -18,6 +18,12 @@ String validatinglecturerEmail(){
 return "$lecturerEmail"
 }
 
+String toString(){
+
+return fullName
+
+}
+
     static constraints = {
 	fullName blank:false, nullable:false
 	post blank:false, nullable:false

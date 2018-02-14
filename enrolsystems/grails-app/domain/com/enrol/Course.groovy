@@ -8,7 +8,7 @@ String department
 
 String title
 
-String leader
+Leader leader
 
 String code
 
@@ -23,6 +23,12 @@ int numberOfStudents
 double tuitionFees
 
 String studyMode
+
+String toString(){
+	
+return title
+
+}
 
 //Variable Constraints
 
