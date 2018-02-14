@@ -11,8 +11,17 @@ class LecturerSpec extends Specification implements DomainUnitTest<Lecturer> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void invalidEmail() {
+        when:"Email is invalid"
+	def emailtest=new Lecturer(
+	fullName:'Dave Wright',
+	post:'egesdgpost',
+	subject:'Mobile Applications',
+	lecturerEmail:'dwright',
+	office:'officenamehere',
+	bio:'''insert bio here''')
+
+	then:"Validation should fail "
+	emailtest.validatinglecturerEmail()
     }
 }

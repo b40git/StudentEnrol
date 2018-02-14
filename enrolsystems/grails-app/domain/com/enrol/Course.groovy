@@ -2,6 +2,8 @@ package com.enrol
 
 class Course {
 
+//Variable Declarations
+
 String department
 
 String title
@@ -21,6 +23,14 @@ int numberOfStudents
 double tuitionFees
 
 String studyMode
+
+//Variable Constraints
+
+double calculateFees(){
+
+	4*tuitionFees
+}
+
 
     static constraints = {
 	title blank:false, nullable:false
