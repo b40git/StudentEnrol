@@ -18,6 +18,12 @@ String password
 
 Course course
 
+//Code defining one to many relationship with Module
+static hasMany=[modules:Module]
+
+//Relationship is owned by domain class Module
+static belongsTo=[Module]
+
 String toString(){
 return "$name, $studentID, $course"
 

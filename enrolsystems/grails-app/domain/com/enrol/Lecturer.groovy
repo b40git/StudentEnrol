@@ -14,6 +14,13 @@ String office
 
 String bio
 
+
+//Code defining one to many relationship with Module and Course
+static hasMany=[modules:Module, courses:Course]
+
+//Relationship is owned by domain class Course
+static belongsTo=[Course]
+
 String validatinglecturerEmail(){
 return "$lecturerEmail"
 }

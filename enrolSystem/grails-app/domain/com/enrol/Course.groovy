@@ -22,6 +22,8 @@ double tuitionFees
 
 String studyMode
 
+static hasMany[lecturers:Lecturer]
+
     static constraints = {
 	title blank:false, nullable:false
 	department blank:false, nullable:false

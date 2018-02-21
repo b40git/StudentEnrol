@@ -100,6 +100,26 @@ class BootStrap {
 	password:'secret',
 	course:animation).save()
 
+	def student4=new Student(
+	name:'Jess Armando',
+	studentID:'b308125',
+	dob:new Date('04/01/1995'),
+	isFundingAvailable:true,
+	email:'ja2@email.com',
+	username:'jarm95',
+	password:'secret',
+	course:animation).save()
+
+	def student5=new Student(
+	name:'Paul James',
+	studentID:'b51521',
+	dob:new Date('29/11/1993'),
+	isFundingAvailable:true,
+	email:'pj1@email.com',
+	username:'pj1993',
+	password:'secret',
+	course:computing).save()
+
 	def lecturermatt=new Lecturer(
 	fullName:'Matthew Smith',
 	post:'Lecturer',
@@ -129,7 +149,6 @@ class BootStrap {
 	code:'PS410',
 	credits:40,
 	lecturer:lecturermatt,
-	course:'Engineering',
 	description:'''Professional studies lorem ipsum''').save()
 
 	def module2=new Module(
@@ -137,7 +156,6 @@ class BootStrap {
 	code:'SYS234',
 	credits:20,
 	lecturer:lecturerryan,
-	course:'BSc Hon Computing',
 	description:'''Lorem ipsum dipsum dolor studies lorem ipsum''').save()
 
 	def module3=new Module(
@@ -145,11 +163,57 @@ class BootStrap {
 	code:'W4ST3',
 	credits:20,
 	lecturer:lecturersteve,
-	course:'BSc Computer Networks',
 	description:'''Ludus cotnetuous nut amd lorem ipsum''').save()
 
-		
+	def module4=new Module(
+	title:'Software Engineering',
+	code:'SE021',
+	credits:20,
+	lecturer:lecturersteve,
+	description:'''SoftwareEng lorem ipsum''').save()
 
+	def module5=new Module(
+	title:'Computing Project',
+	code:'CP46',
+	credits:40,
+	lecturer:lecturersteve,
+	description:'''Computing Project lorem ipsum''').save()
+
+	def module6=new Module(
+	title:'Web Analytics',
+	code:'WAN81',
+	credits:20,
+	lecturer:lecturersteve,
+	description:'''Web lorem ipsum''').save()
+
+		
+	lecturerryan.addToModules(module1)
+	lecturerryan.addToModules(module2)
+	lecturersteve.addToModules(module3)
+	lecturersteve.addToModules(module4)
+	computing.addToLecturers(lecturerryan)
+	animation.addToLecturers(lecturerryan)	
+	lecturersteve.addToCourses(computing)
+	lecturersteve.addToCourses(engineering)
+	lecturerryan.addToCourses(computing)
+	lecturermatt.addToCourses(engineering)
+	computing.addToStudents(student1)
+	engineering.addToStudents(student2)
+	animation.addToStudents(student3)
+	animation.addToStudents(student4)
+	module1.addToCourses(engineering)
+	module2.addToCourses(computing)
+	module4.addToCourses(computing)
+	module5.addToCourses(computing)
+	student1.addToModules(module2)
+	student1.addToModules(module3)
+	student1.addToModules(module4)
+	student1.addToModules(module5)
+	student1.addToModules(module6)
+	student5.addToModules(module2)
+	student5.addToModules(module5)
+	
+		
 		
 
 

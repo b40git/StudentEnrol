@@ -24,6 +24,8 @@ double tuitionFees
 
 String studyMode
 
+static hasMany=[students:Student, lecturers:Lecturer, modules:Module]
+
 String toString(){
 	
 return title
